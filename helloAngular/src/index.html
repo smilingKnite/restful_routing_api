@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HelloAngular</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script>
+    $(document).ready(function(){
+      // $('#innfo').css(/'visibility', 'hidden');
+
+
+      $("#showAll").on('click', function(){
+        $(this).css({'visibility': 'hidden'});
+        $('#allTasks').css({'visibility': 'visible'});
+        $('#hideAll').css({'visibility': 'visible'});
+      });
+
+      $("#hideAll").on('click', function(){
+        $(this).css({'visibility': 'hidden'});
+        $('#allTasks').css({'visibility': 'hidden'});
+        $('#showAll').css({'visibility': 'visible'});
+      });
+
+      // $('#showDetails').on('click', function() {
+      //   $('#innfo').css({'visibility': 'hidden'});
+      // });
+      
+    });
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

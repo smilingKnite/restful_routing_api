@@ -1,0 +1,21 @@
+.root {
+    border: 3px solid red;
+}
+#showAll {
+    margin: auto;
+    display: block;
+    padding: 5px;
+    /* border: 1px solid black; */
+}
+#allTasks {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+}
+#hideAll{
+    visibility: hidden;
+    margin: auto;
+    display: block;
+    padding: 5px;
+
+}
